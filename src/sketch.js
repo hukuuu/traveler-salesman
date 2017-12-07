@@ -1,3 +1,6 @@
+import GeneticAlgorithm from './algorithms/genetic.js'
+import { map } from 'ramda'
+
 const citiesLenght = 5
 const width = 640
 const height = 480
@@ -21,15 +24,15 @@ const drawCity = (city, i) => {
   ellipse(city.x, city.y, 5)
 }
 
-const drawCities = R.map(drawCity)
+const drawCities = map(drawCity)
 
-function setup() {
+window.setup = function() {
   createCanvas(width, height)
   cities = createCities(citiesLenght, width, height)
   algorithm = new GeneticAlgorithm(cities)
 }
 
-function draw() {
+window.draw = function() {
   fill('black')
   rect(0, 0, width, height)
   drawCities(cities)

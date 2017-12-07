@@ -1,6 +1,22 @@
 {
+  "name": "traveler-salesman",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
   "dependencies": {
     "p5": "^0.5.16",
     "ramda": "^0.25.0"
-  }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

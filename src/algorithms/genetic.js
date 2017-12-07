@@ -1,3 +1,5 @@
+import { range, pathDistance } from '../helpers'
+
 class GeneticAlgorithm {
   constructor(cities) {
     this.cities = cities
@@ -30,3 +32,5 @@ class GeneticAlgorithm {
     this.currentOrder = shuffle(this.firstOrder)
   }
 }
+
+export default GeneticAlgorithm

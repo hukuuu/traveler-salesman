@@ -24,10 +24,9 @@ class GeneticAlgorithm {
   }
 
   drawBestScore() {
-    const score = pathDistance(this.cities, this.bestOrder)
     noFill()
     stroke('white')
-    text(score, 10, 20)
+    text(this.bestScore, 10, 20)
   }
 
   draw() {
